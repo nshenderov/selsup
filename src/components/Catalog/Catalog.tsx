@@ -33,7 +33,6 @@ export function Catalog() {
 
     if (dialogRef.current.hasAttribute('open')) {
       dialogRef.current.close();
-      setParamEditorCurrModel(null);
     } else {
       dialogRef.current.showModal();
     }
@@ -57,7 +56,11 @@ export function Catalog() {
           </div>
         ))}
       </div>
-      <Dialog ref={dialogRef} toggleDialog={toggleDialog}>
+      <Dialog
+        ref={dialogRef}
+        onClose={() => setParamEditorCurrModel(null)}
+        toggleDialog={toggleDialog}
+      >
         {paramEditorCurrModel && (
           <form
             className="catalog__param-editor-wrapper"
