@@ -1,0 +1,25 @@
+:root {
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  padding: 3px;
+}
+input {
+  border: 1px solid#828282;
+  border-radius: 4px;
+}

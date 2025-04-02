@@ -1,0 +1,17 @@
+.param-editor {
+}
+
+.param-editor__field:not(:nth-child(1)) {
+  margin-top: 16px;
+}
+
+.param-editor__field label {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.param-editor__field label input {
+  float: right;
+  margin-left: 16px;
+}

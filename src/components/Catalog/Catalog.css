@@ -1,0 +1,41 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.catalog__item-wrapper {
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: scale 200ms ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #f0ebeb;
+  padding: 16px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.catalog__item:hover {
+  scale: 1.1;
+}
+
+.catalog__param-editor-wrapper {
+  padding: 16px;
+}
+
+.catalog__param-editor-controls {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 16px;
+}

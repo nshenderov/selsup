@@ -1,0 +1,14 @@
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.dialog::backdrop {
+  backdrop-filter: blur(10px);
+}
